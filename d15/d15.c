@@ -13,6 +13,8 @@ void run(int goal) {
 	putchar('\n');
 	int start = sizeof(ini) / INT_SIZE;
 	int tab[BIG_SIZE]; // segv on 30000000
+	// ulimit -a
+	// 8mB stack size
 	putchar('1');
 	putchar('\n');
 	memset(tab, 0, INT_SIZE * goal);
